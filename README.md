@@ -100,7 +100,7 @@ Hardware:
 - Power bank 10,000mAh 
 - MicroSD card 32GB
 - Enclosure and wiring 
-Total: ₹4,880
+Total: 3000
 
 Software stack:
 - EasyOCR for text extraction (supports Hindi + English + 78 other languages, runs on-device)
