@@ -1,10 +1,10 @@
-SAMAKSH - Assistive Vision Agent for Visually Impaired Indians
+SAMAKSH - Assistive Vision Agent for Visually Impaired people acroos globe
 
 Team Elite Achievers
 Lead: Dhruv Gupta
 WHAT WE'RE BUILDING
 
-SAMAKSH is a wearable AI device that helps blind people read text and understand their surroundings through voice interaction in Hindi and English. It costs ₹4,880 - which is 95% cheaper than existing solutions like OrCam MyEye (₹1,00,000+).
+SAMAKSH is a wearable AI device that helps blind people read text and understand their surroundings through voice interaction in Hindi and English. It costs ₹3000 - which is 95% cheaper than existing solutions like OrCam MyEye (₹1,00,000+).
 The device is a camera + speaker system you can wear or hold. Press a button, it captures what's in front of you, reads the text aloud in the detected language, and then you can ask follow-up questions through voice.
 
 WHO IS THIS FOR
@@ -49,16 +49,11 @@ User presses capture button → Device reads medicine label in Hindi → User as
 
 Another workflow:
 User captures government form → Device reads all sections → User asks "form ki deadline kya hai?" → Device extracts deadline from stored context → Responds conversationally
-
 This is repeatable, autonomous, and doesn't require user to understand the system - just press button and ask.
 
 WHY THIS CAN REACH 1 BILLION (OR BE ON PATH TO IT)
-
 Cost Economics:
-Current hardware cost: ₹4,880
-At 1,000 units: ₹3,340 per device
-At 10,000 units: ₹2,530 per device
-
+Current hardware cost: ₹3000 around
 Operational cost per user: ₹170/month (includes API costs, support, infrastructure)
 
 Why it scales:
@@ -80,19 +75,13 @@ The path to scale is through institutional partnerships first, then individual s
 ACCESSIBILITY BARRIERS WE ADDRESS
 
 Connectivity: Core features (OCR + text reading) work completely offline. Only conversational AI needs internet, and that's optional.
-
 Cost: 95% cheaper than alternatives. At scale, under ₹3,000.
-
 Device constraints: Standalone hardware. No smartphone needed. No app downloads. No updates.
-
 Language: Hindi + English with auto-detection. Expandable to Tamil, Telugu, Bengali, Marathi, Gujarati post-hackathon.
-
 Literacy: Zero reading or typing required. 100% voice interaction. Physical buttons, no screen navigation.
-
 Disability: Built specifically for blind users, not adapted from sighted-user products.
 
 Trust: All text processing happens on-device. Cloud AI only called when user explicitly asks questions. No data collection.
-
 Graceful degradation:
 - No internet: Text reading still works fully
 - Slow 2G: Works but conversational AI takes 20-30 seconds
@@ -103,14 +92,14 @@ Graceful degradation:
 TECHNICAL IMPLEMENTATION
 
 Hardware:
-- Raspberry Pi Zero 2W (₹1,500)
-- Pi Camera Module v2 (₹1,200)
-- USB Microphone (₹300)
-- USB Audio adapter + Earphone (₹200)
-- 2 GPIO buttons for capture and voice mode (₹20)
-- Power bank 10,000mAh (₹800)
-- MicroSD card 32GB (₹400)
-- Enclosure and wiring (₹460)
+- Raspberry Pi Zero 2W 
+- Pi Camera Module v2 
+- USB Microphone 
+- USB Audio adapter + Earphone 
+- 2 GPIO buttons for capture and voice mode 
+- Power bank 10,000mAh 
+- MicroSD card 32GB
+- Enclosure and wiring 
 Total: ₹4,880
 
 Software stack:
@@ -128,16 +117,6 @@ Performance:
 - Text reading: 8-13 seconds total (fully offline possible)
 - Voice interaction: 13-21 seconds (requires internet for AI)
 - Battery life: 8-10 hours continuous use
-
-What we're NOT building (to stay focused):
-- No medical diagnosis or health advice
-- No navigation/obstacle detection (separate product)
-- No form submission (only reads forms)
-- No social media integration
-- No mobile app companion
-- No cloud storage of personal data
-
----
 
 DEMO SCENARIOS
 
@@ -159,10 +138,7 @@ Device: "No text found. Would you like me to describe the scene?"
 User presses voice: "Yes, describe what you see"
 Device: "I see a living room. There's a sofa on the left side, a coffee table in the center, and a TV mounted on the wall ahead."
 
----
-
 WHY THIS IS DIFFERENT
-
 Compared to OrCam MyEye (₹1,00,000):
 - 95% cheaper
 - Has conversational AI, not just command-based
@@ -186,31 +162,7 @@ Fresh angles:
 - Code-switching support for Hindi-English mix (natural Indian usage)
 - Community manufacturing model through open-source
 - Priced specifically to qualify for government subsidy
-
----
-
 VALIDATION SO FAR
-
-User research: Interviewed 12 visually impaired individuals at NAB Delhi
-Key findings:
-- 9 out of 12 use smartphones but struggle with screen readers
-- 11 out of 12 prefer voice in Hindi over English
-- 8 out of 12 need help reading bills/medicines daily
-- All expressed strong desire for reading independence
-
-Beta testing: 5 users tested prototype
-- 85% text recognition accuracy on printed text
-- 92% satisfaction with voice interaction
-- Average 3.2 uses per day per user
-- Main feedback: wants more languages, better battery life
-
-Cost validation: Received quotes from 3 manufacturers
-- At 1,000 units: ₹3,340 per device confirmed
-- At 10,000 units: ₹2,530 per device confirmed
-- Breakeven at 500 units per month
-
----
-
 ROADMAP
 
 Hackathon (current):
@@ -222,50 +174,6 @@ Currency recognition for Indian notes
 Offline LLM (Phi-2) for conversational features
 Battery optimization to 12+ hours
 User testing with 50 blind individuals
-
-Pilot phase (Month 4-6):
-Partnership with NAB, Sightsavers, Blind Relief Association
-Deploy 100 devices
-Collect usage data
-Apply for ADIP subsidy approval
-
-Scale phase (Month 7-12):
-Manufacturing partnership for 1,000 units/month
-E-commerce launch
-Government procurement participation
-Expand to 10 Indian languages
-
----
-
-MEASURABLE SUCCESS
-
-Primary metric: Daily Active Usage Rate
-Target: 70% of users use the device at least once daily within 30 days of receiving it
-Current baseline: 0% (no device exists)
-Industry comparison: OrCam users report 3-5 uses per day
-
-Secondary metrics:
-- Task completion rate above 80% (successful text readings)
-- User satisfaction NPS above 50
-- Independence score: self-reported reduction in sighted assistance
-
-Tracking: Anonymous usage logs (button presses, session duration, no personal data)
-
----
-
-WHAT WE'RE NOT INCLUDING
-
-We explicitly decided NOT to build:
-- Medical diagnosis features (only reads labels, no health advice)
-- Navigation system (different product category)
-- Form filling and submission (compliance and liability)
-- Social media integration (privacy-first approach)
-- Currency identification (planned for v2)
-- Cloud storage (all local processing)
-
-This keeps the product focused, safe, and achievable in hackathon timeline.
-
----
 
 FILES AND CODE
 
