@@ -1,4 +1,4 @@
-SAMAKSH - Assistive Vision Agent for Visually Impaired people acroos globe
+SAMAKSH - Assistive Glasses for the Visually impaired
 
 Team Elite Achievers
 Lead: Dhruv Gupta
