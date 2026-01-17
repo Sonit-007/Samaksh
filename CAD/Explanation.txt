@@ -1,0 +1,16 @@
+CAD Design Explanation
+
+The complete mechanical design of the Samaksh system was developed using Onshape, a cloud-based CAD platform.
+The design focuses on creating a compact, lightweight, and wearable structure suitable for smart glasses, while ensuring proper mounting and protection of all electronic components.
+
+The following design files are included:
+
+frame – Represents the main structural frame that supports the overall hardware assembly.
+
+camera_mount – A custom mount designed to securely hold the Raspberry Pi Zero 2 W module and pi camera module in the required position for vision capture.
+
+Battery_mount – Contains the housing design that protects internal components and power the device.
+
+The STEP files can be imported into standard CAD software such as Fusion 360, SolidWorks, or similar tools for viewing, modification, or further development.
+
+CAD Onshape Link - https://cad.onshape.com/documents/d6431d0d0bc9dde5a2c9603e/w/08040d368701d5f359209fa3/e/d501df786d32f353b9e2bed0?renderMode=0&uiState=696adcc23b75a2d5ac142798
